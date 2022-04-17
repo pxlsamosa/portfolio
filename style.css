@@ -33,6 +33,9 @@ section {
   min-height: 100vh;
 }
 .banner {
+  background-color: #f9c5c4;
+}
+.banner {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -81,6 +84,9 @@ section {
   color: #333;
   font-weight: 300;
 }
+.banner .contentBx p {
+  color: #000;
+}
 .banner .contentBx h4 {
   color: #939adf;
   font-size: 1.5em;
@@ -88,7 +94,7 @@ section {
 }
 .banner .contentBx h1 {
   font-size: 3em;
-  color: #f9c5c4;
+  color: #fff;
   line-height: 1em;
 }
 p {
@@ -219,6 +225,15 @@ p {
 }
 .about .content .imgBx img {
   max-width: 100%;
+}
+.showcase .title.black h2 {
+  color: white;
+}
+.showcase .title.black p {
+  color: white;
+}
+.showcase {
+  background-color: #939adf;
 }
 .showcase .content {
   display: flex;
