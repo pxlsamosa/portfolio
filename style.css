@@ -192,7 +192,7 @@ p {
   height: 4px;
   background: #efb0c5;
 }
-.bits .bits h2::before {
+.landscapes .landscapes h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -200,9 +200,9 @@ p {
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #ff8e42;
+  background: #d1a8d9;
 }
-.gameboy .gameboy h2::before {
+.farmland .farmland h2::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -210,7 +210,7 @@ p {
   bottom: -10px;
   width: 60px;
   height: 4px;
-  background: #d0d058;
+  background: #9cdb43;
 }
 .title.pink h2 {
   color: #f9c5c4;
@@ -251,6 +251,7 @@ p {
 }
 .showcase .title.black p {
   color: white;
+  font-size: x-large;
 }
 .showcase {
   background-color: #939adf;
@@ -286,29 +287,30 @@ p {
   color: #fff;
 }
 
-.bits .title.bits h2 {
+.landscapes .title.landscapes h2 {
   color: white;
 }
-.bits .title.bits p {
+.landscapes .title.landscapes p {
   color: white;
+  font-size: x-large;
 }
-.bits {
-  background-color: #10368f;
+.landscapes {
+  background-color: #6076c2;
 }
-.bits .content {
+.landscapes .content {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.bits .content h3 {
+.landscapes .content h3 {
   color: white;
 }
-.bits .content .bits img {
+.landscapes .content .landscapes img {
   width: 100%;
   height: 100%;
 }
-.bits .content .bits {
+.landscapes .content .landscapes {
   padding: 10px 10px;
   max-height: 350px;
   max-width: 350px;
@@ -318,16 +320,16 @@ p {
   text-align: center;
   line-height: 2em;
 }
-.bits .content .bits:hover {
-  background: #ff8e42;
+.landscapes .content .landscapes:hover {
+  background: #000000;
   /* transform: scale(1.1); */
 }
-.bits .content .bits h3 {
+.landscapes .content .landscapes h3 {
   margin: 0;
   transition: 0.5s;
 }
-.bits .content .bits:hover h3 {
-  color: #ff8e42;
+.landscapes .content .landscapes:hover h3 {
+  color: #000000;
 }
 .showcase .content .showcaseBz img {
   width: 100%;
@@ -355,29 +357,30 @@ p {
   color: #fff;
 }
 
-.gameboy .title.gameboy h2 {
+.farmland .title.farmland h2 {
   color: white;
 }
-.gameboy .title.gameboy p {
+.farmland .title.farmland p {
   color: white;
+  font-size: x-large;
 }
-.gameboy {
-  background-color: #a0a840;
+.farmland {
+  background-color: #59c135;
 }
-.gameboy .content {
+.farmland .content {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.gameboy .content h3 {
+.farmland .content h3 {
   color: white;
 }
-.gameboy .content .gameboy img {
+.farmland .content .farmland img {
   width: 100%;
   height: 100%;
 }
-.gameboy .content .gameboy {
+.farmland .content .farmland {
   padding: 10px 10px;
   max-height: 350px;
   max-width: 350px;
@@ -388,16 +391,16 @@ p {
   text-align: center;
   line-height: 2em;
 }
-.gameboy .content .gameboy:hover {
-  background: #405010;
+.farmland .content .farmland:hover {
+  background: #000000;
   /* transform: scale(1.1); */
 }
-.gameboy .content .gameboy h3 {
+.farmland .content .farmland h3 {
   margin: 0;
   transition: 0.5s;
 }
-.gameboy .content .gameboy:hover h3 {
-  color: #405010;
+.farmland .content .farmland:hover h3 {
+  color: #000000;
 }
 @media (max-width: 991px) {
   .banner .imgSidebar {
