@@ -1,0 +1,518 @@
+/* dsadsadas */
+@font-face {
+  src: url("Pixelar\ Regular\ W01\ Regular.ttf");
+  font-family: pixelare;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: pixelare, sans-serif;
+  scroll-behavior: smooth;
+}
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: #000000 url(menu.png);
+  background-size: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1000;
+}
+.toggle.active {
+  background: #000000 url(close.png);
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+section {
+  padding: 100px;
+  min-height: 100vh;
+}
+.banner {
+  background-color: #f9c5c4;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+}
+.banner .imgSidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 100%;
+}
+.banner .imgSidebar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner .contentBx,
+.sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 500px);
+  height: 100%;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.logoText {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: #333;
+  color: #fff;
+  padding: 0 5px;
+}
+.banner .contentBx h4 {
+  font-size: 1.5em;
+  color: #333;
+  font-weight: 300;
+}
+.banner .contentBx p {
+  color: #000;
+}
+.banner .contentBx h4 {
+  color: #939adf;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.banner .contentBx h1 {
+  font-size: 3em;
+  color: #fff;
+  line-height: 1em;
+}
+p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 300;
+}
+.btn {
+  background: #939adf;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.sidebar {
+  position: fixed;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.7s;
+  padding: 40px;
+  z-index: 100;
+  right: -100%;
+}
+.sidebar.active {
+  right: 0;
+}
+.sidebar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  margin: 10px 0;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sidebar ul li a:hover {
+  color: #f9c5c4;
+}
+.sci {
+  position: absolute;
+  left: 100px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sci li {
+  margin-right: 10px;
+  list-style: none;
+}
+.sci li img {
+  transform: scale(0.5);
+  opacity: 0.7;
+}
+.sci li img:hover {
+  opacity: 1;
+}
+.title {
+  width: 100%;
+  text-align: center;
+}
+.title h2 {
+  position: relative;
+  color: #f9c5c4;
+  font-size: 3em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.title p {
+  max-width: 700px;
+  font-size: 1.2em;
+  color: #fff;
+  display: inline-block;
+}
+.title h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #efb0c5;
+}
+.landscapes .landscapes h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #4788b3;
+}
+.weapons .weapons h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #849be4;
+}
+.characters .characters h2::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 4px;
+  background: #9cdb43;
+}
+.title.pink h2 {
+  color: #f9c5c4;
+}
+.title.pink p {
+  color: #fff;
+}
+.title.black p {
+  color: #000;
+}
+.about {
+  background: #000f;
+}
+.title.pink h2::before {
+  background: #efb0c4;
+}
+.about .content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.about .content .textBx {
+  min-width: 60%;
+  width: 49%;
+}
+.about .content .textBx p {
+  color: #fff;
+  font-size: 1.2em;
+}
+.about .content .imgBx {
+  margin-left: 40px;
+}
+.about .content .imgBx img {
+  max-width: 100%;
+}
+.showcase .title.black h2 {
+  color: white;
+}
+.showcase .title.black p {
+  color: white;
+  font-size: x-large;
+}
+.showcase {
+  background-color: #939adf;
+}
+.showcase .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.showcase .content .showcaseBx img {
+  width: 100%;
+  height: 90%;
+}
+.showcase .content .showcaseBx {
+  padding: 10px 10px;
+  max-width: 340px;
+  margin: 40px;
+  transition: 0.5s;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 2.3em;
+}
+.showcase .content .showcaseBx:hover {
+  background: #000;
+  /* transform: scale(1.1); */
+}
+.showcase .content .showcaseBx h3 {
+  margin: 0;
+  transition: 0.5s;
+}
+.showcase .content .showcaseBx:hover h3 {
+  color: #fff;
+}
+
+.landscapes .title.landscapes h2 {
+  color: white;
+}
+.landscapes .title.landscapes p {
+  color: white;
+  font-size: x-large;
+}
+.landscapes {
+  background-color: #66a3cc;
+}
+.landscapes .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.landscapes .content h3 {
+  color: white;
+}
+.landscapes .content .landscapes img {
+  width: 100%;
+  height: 100%;
+}
+.landscapes .content .landscapes {
+  padding: 10px 10px;
+  max-height: 350px;
+  max-width: 350px;
+  margin: 40px;
+  transition: 0.5s;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 2em;
+}
+.landscapes .content .landscapes:hover {
+  background: #000000;
+  /* transform: scale(1.1); */
+}
+.landscapes .content .landscapes h3 {
+  margin: 0;
+  transition: 0.5s;
+}
+.landscapes .content .landscapes:hover h3 {
+  color: #000000;
+}
+
+.showcase .content .showcaseBz img {
+  width: 100%;
+  height: 90%;
+}
+.showcase .content .showcaseBz {
+  padding: 20px 20px;
+  max-height: 850px;
+  max-width: 850px;
+  margin: 40px;
+  transition: 0.5s;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 3.1em;
+}
+.showcase .content .showcaseBz:hover {
+  background: #000;
+  /* transform: scale(1.1); */
+}
+.showcase .content .showcaseBz h2 {
+  margin: 0;
+  transition: 0.5s;
+}
+.showcase .content .showcaseBz:hover h2 {
+  color: #fff;
+}
+
+.characters .title.characters h2 {
+  color: white;
+}
+.characters .title.characters p {
+  color: white;
+  font-size: x-large;
+}
+.characters {
+  background-color: #59c135;
+}
+.characters .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.characters .content h3 {
+  color: white;
+}
+.characters .content .characters img {
+  width: 100%;
+  height: 100%;
+}
+.characters .content .characters {
+  padding: 10px 10px;
+  max-height: 350px;
+  max-width: 350px;
+  margin: 40px;
+  transition: 0.5s;
+  object-fit: cover;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 2em;
+}
+.characters .content .characters:hover {
+  background: #000000;
+  /* transform: scale(1.1); */
+}
+.characters .content .characters h3 {
+  margin: 0;
+  transition: 0.5s;
+}
+.characters .content .characters:hover h3 {
+  color: #000000;
+}
+.weapons .title.weapons h2 {
+  color: white;
+}
+.weapons .title.weapons p {
+  color: white;
+  font-size: x-large;
+}
+.weapons {
+  background-color: #5068b5;
+}
+.weapons .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.weapons .content h3 {
+  color: white;
+}
+.weapons .content .weapons img {
+  width: 100%;
+  height: 100%;
+}
+.weapons .content .weapons {
+  padding: 10px 10px;
+  max-height: 350px;
+  max-width: 350px;
+  margin: 40px;
+  transition: 0.5s;
+  background: #f5f5f5;
+  text-align: center;
+  line-height: 2em;
+}
+.weapons .content .weapons:hover {
+  background: #000000;
+  /* transform: scale(1.1); */
+}
+.weapons .content .weapons h3 {
+  margin: 0;
+  transition: 0.5s;
+}
+.weapons .content .weapons:hover h3 {
+  color: #000000;
+}
+@media (max-width: 991px) {
+  .banner .imgSidebar {
+    display: none;
+  }
+  .banner .contentBx,
+  .sidebar {
+    width: 100%;
+    padding: 40px;
+  }
+  .logoText {
+    left: 40px;
+  }
+  .toggle {
+    right: 40px;
+  }
+  .sci {
+    left: 40px;
+  }
+  section {
+    padding: 40px;
+    min-height: 100vh;
+  }
+  .about .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .about .content .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+  .about.content {
+    margin-top: 0;
+  }
+  .about .content .imgBx {
+    margin-left: 0;
+  }
+  .showcase .content .showcaseBx {
+    padding: 30px 20px;
+    max-width: 340px;
+    margin: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .showcase .content .showcaseBx {
+    padding: 30px 20px;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+.copyright {
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  background-color: #111;
+  padding: 10px;
+}
